@@ -1,7 +1,12 @@
-const Home = () => {
-  const foo = 'bar'
+import Header from 'components/Header'
 
-  return <h1>Hello World</h1>
+const Home = () => {
+  return (
+    <div>
+      <Header />
+      <p className="hello-world"></p>
+    </div>
+  )
 }
 
 export default Home
