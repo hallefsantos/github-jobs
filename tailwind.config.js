@@ -7,6 +7,19 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      black: '#000',
+      blue: {
+        dark: '#334680',
+        DEFAULT: '#1E86FF'
+      },
+      gray: {
+        dark: '#282538',
+        DEFAULT: '#B9BDCF',
+        light: '#F6F7FB'
+      },
+      white: '#FFF'
+    },
     fontFamily: {
       sans: ['Poppins', ...defaultTheme.fontFamily.sans]
     },
