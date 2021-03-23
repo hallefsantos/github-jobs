@@ -1,11 +1,25 @@
+import Head from 'next/head'
+import Container from 'components/Container'
 import Header from 'components/Header'
+import SearchForm from 'components/SearchForm'
 
 const Home = () => {
   return (
-    <div>
+    <Container>
+      <Head>
+        <title>Github Jobs</title>
+      </Head>
       <Header />
-      <p className="hello-world"></p>
-    </div>
+
+      <div className="relative py-11 bg-red-400 flex justify-center items-center rounded overflow-auto">
+        <img
+          className="absolute w-full h-full object-cover"
+          src="/backgroundImg.png"
+          alt=""
+        />
+        <SearchForm />
+      </div>
+    </Container>
   )
 }
 
